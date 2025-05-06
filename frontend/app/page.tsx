@@ -1,59 +1,50 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 import HeroSection from "@/components/hero-section";
-import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import AdvantagesSection from "@/components/advantages-section";
+import FeedbackLineChart from "@/components/feedback-line-chart";
+
 
 export default function Home() {
-  const features = [
-    {
-      title: "Expert Instructors",
-      description: "Learn from qualified professionals with real-world experience in English and IT.",
-    },
-    {
-      title: "Interactive Lessons",
-      description: "Engage with hands-on content designed to boost your retention and skills.",
-    },
-    {
-      title: "Flexible Learning",
-      description: "Study at your own pace, anytime, anywhere — perfect for busy schedules.",
-    },
-    {
-      title: "Beginner to Advanced",
-      description: "Courses designed for all levels, from absolute beginners to experienced learners.",
-    },
-    {
-      title: "Community Support",
-      description: "Join a growing network of learners and get help, tips, and encouragement.",
-    },
-    {
-      title: "Career-Focused",
-      description: "Build real-world skills that directly translate to career and academic success.",
-    },
-  ]
-
   return (
     <>
       <Header />
       <HeroSection />
-      <section className="max-h-screen w-full bg-cover bg-[url('https://images.unsplash.com/photo-1707730376818-a7a02fe896d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-        <div className="min-h-screen w-full p-5 lg:p-20">
-          <div className="grid gap-6 col-auto lg:grid-cols-3 mt-10">
-            {features.map((feature, index) => (
-              <Card key={index} className="shadow-md">
-                <CardHeader>
-                  <CardTitle><p className="text-xl">{feature.title}</p></CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <AdvantagesSection />
       <section className="max-h-screen w-full bg-center bg-black">
         <div className="min-h-screen w-full p-5 lg:p-20">
-
+          <div className="w-full h-full grid col-auto lg:grid-cols-2">
+            <div className="h-auto w-full p-5 lg:p-20 flex items-center flex-wrap">
+              <form className="border-2 w-full max-w-md text-black rounded-lg shadow-lg p-12 space-y-6 bg-center bg-[url('https://images.unsplash.com/photo-1660982238213-eeef93d9dc16?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
+                <h1 className="pt-2 pb-7.5 text-4xl text-center text-white">Reply a feedback</h1>
+                <div className="space-y-1">
+                  <Label htmlFor="name">Name</Label>
+                  <Input id="name" type="text" placeholder="Your name" required />
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="email"><p>Email</p></Label>
+                  <Input id="email" type="email" placeholder="you@example.com" required />
+                </div>
+                <div className="space-y-1">
+                  <Label htmlFor="feedback"><p>Feedback</p></Label>
+                  <Textarea
+                    id="feedback"
+                    placeholder="Your feedback here"
+                    rows={5}
+                    required
+                  />
+                </div>
+                <Button type="submit" className="bg-white w-full mt-8"><p className="font-[300]">Submit Feedback</p></Button>
+              </form>
+            </div>
+              <div>
+                <FeedbackLineChart />
+            </div>
+          </div>
         </div>
       </section>
       <section className="max-h-screen w-full bg-center bg-[url('https://images.unsplash.com/photo-1693648793394-0b76b7eb042e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
