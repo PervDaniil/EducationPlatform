@@ -12,7 +12,7 @@ import {
 import { ChartConfig, ChartContainer } from "@/components/ui/chart"
 
 const chartData = [
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
+  { browser: "safari", visitors: 14, fill: "var(--color-safari)" },
 ]
 
 const chartConfig = {
@@ -21,7 +21,7 @@ const chartConfig = {
   },
   safari: {
     label: "Safari",
-    color: "lime",
+    color: "rgba(20, 255, 50, 1)",
   },
 } satisfies ChartConfig
 
@@ -71,7 +71,7 @@ export function CircleChart() {
                           y={(viewBox.cy || 0) + 24}
                           className="fill-muted-foreground"
                         >
-                          Visitors
+                          Tasks
                         </tspan>
                       </text>
                     )

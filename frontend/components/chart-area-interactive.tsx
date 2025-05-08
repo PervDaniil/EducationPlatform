@@ -23,11 +23,11 @@ const chartData = [
 const chartConfig = {
   desktop: {
     label: "Successufully completed tasks",
-    color: "lime",
+    color: "rgb(20, 255, 50)",
   },
   mobile: {
     label: "Unsuccessufully completed tasks",
-    color: "rgb(250, 0, 0)",
+    color: "rgb(255, 0, 0)",
   },
 } satisfies ChartConfig
 
@@ -61,7 +61,7 @@ export function ChartAreaInteractive() {
               dataKey="mobile"
               type="natural"
               fill="var(--color-mobile)"
-              fillOpacity={0.3}
+              fillOpacity={0.15}
               stroke="var(--color-mobile)"
               stackId="a"
             />
@@ -69,7 +69,7 @@ export function ChartAreaInteractive() {
               dataKey="desktop"
               type="natural"
               fill="var(--color-desktop)"
-              fillOpacity={0.2}
+              fillOpacity={0.1}
               stroke="var(--color-desktop)"
               stackId="a"
             />

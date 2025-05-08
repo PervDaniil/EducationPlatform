@@ -32,7 +32,7 @@ export default function Page() {
               <div className="w-full flex px-4 lg:px-6">
               <div className="rounded-xl w-full flex bg-muted/20 border">
                 <ChartAreaInteractive />
-                <div className="flex flex-col ">
+                <div className="flex flex-col justify-center">
                   <CircleChart />
                   <CircleChart />
                 </div>
