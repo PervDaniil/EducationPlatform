@@ -5,7 +5,7 @@ export default function HeroSection() {
                 <h1 className="mt-20 text-7xl lg:text-[9.5em]">Brain Center</h1>
                 <p className="ml-8 mt-10 text-xs lg:text-base text-gray-300 max-w-3xl">Explore our education platform "Brain Center". We offer a variety of high-quality English & IT courses designed for learners of all levels. Whether you're looking to improve your language skills or gain technical expertise, our expert instructors and interactive lessons will help you achieve your goals. Join our growing community and start learning today!</p>
                 <div className="flex-1 flex items-end">
-                    <button className="mb-25 px-7.5 py-4 rounded-full bg-white text-black"><p>Get started</p></button>
+                    <button className="mb-25 px-10 py-4 rounded-full bg-white text-black"><p>Get started</p></button>
                 </div>
             </div>
         </section>

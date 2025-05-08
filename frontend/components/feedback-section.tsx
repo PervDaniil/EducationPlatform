@@ -29,7 +29,7 @@ export default function FeedbackSection() {
                         </form>
                     </div>
                     <div className="min-w-4xl bg-black p-10 mb-20 rounded-2xl mt-20 border-2 shadow-xl">
-                        <p className="text-center text-gray-300">"Number of IT & English students last year"</p>
+                        <p className="text-center">"Number of IT & English students last year"</p>
                         <FeedbackLineChart />
                     </div>
                 </div>

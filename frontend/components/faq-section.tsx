@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { IconCashBanknote, IconTimeDuration0, IconTimeDuration10, IconTimeDuration30, IconTimeline } from "@tabler/icons-react";
 
 
 export default function FAQSection() {
@@ -19,25 +20,70 @@ export default function FAQSection() {
                             ))}
                         </div>
                     </div>
-                    <div className="p-10 rounded-2xl border-2">
-                        <div className="w-full h-full grid grid-cols-2 place-items-center">
-                            <div className="flex justify-center items-center w-64 h-32 bg-muted/10 border rounded-xl">
-                                <h1 className="text-8xl ">EN</h1>
-                            </div>
-                            <div className="flex justify-center items-center w-64 h-32 bg-muted/10 border rounded-xl">
-                                <h1 className="text-8xl ">IT</h1>
-                            </div>
-                            <div className="flex justify-center items-center w-64 h-32 bg-muted/10 border rounded-xl">
-                                <h1 className="text-7xl ">1200</h1>
-                            </div>
-                            <div className="flex justify-center items-center w-64 h-32 bg-muted/10 border rounded-xl">
-                                <h1 className="text-7xl ">2000</h1>
-                            </div>
-                            <div className="flex justify-center items-center w-64 h-32 bg-muted/10 border rounded-xl">
-                                <h1 className="text-8xl ">1 m</h1>
-                            </div>
-                            <div className="flex justify-center items-center w-64 h-32 bg-muted/10 border rounded-xl">
-                                <h1 className="text-8xl ">1 m</h1>
+                    <div className="p-10 rounded-2xl border-2 shadow-accent bg-muted/10 backdrop-blur-lg">
+                        <div className="w-full h-full text-gray-300">
+                            <div className="flex flex-col h-full gap-6">
+                                <div className="flex-1 mt-5">
+                                    <h1 className="text-5xl font-bold text-white border-l-5 border-teal-600 pl-8">English Course</h1>
+                                    <p className="mt-5 mb-6 text-gray-300">
+                                        English course that introduces students to reading, writing, and creative language projects. Perfect for young minds eager to explore the world of words and communication.
+                                    </p>
+                                    <hr />
+                                    <div className="flex flex-wrap gap-y-4 gap-x-12 pt-4">
+                                        <div>
+                                            <div className="flex space-x-2">
+                                                <p className="text-lg font-semibold">Duration</p>
+                                                <IconTimeDuration30 />
+                                            </div>
+                                            <p className="text-md">30 days (continue learning anytime)</p>
+                                        </div>
+                                        <div>
+                                            <div className="flex space-x-2">
+                                                <p className="text-lg font-semibold">Ages</p>
+                                                <IconTimeline />
+                                            </div>
+                                            <p className="text-md">8 – 16 years old</p>
+                                        </div>
+                                        <div>
+                                            <div className="flex space-x-2">
+                                            <p className="text-lg font-semibold">Price</p>
+                                                <IconCashBanknote />
+                                            </div>
+                                            <p className="text-md">1200/month</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex-1">
+                                    <h1 className="text-5xl font-bold text-white border-l-5 border-teal-600 pl-8">IT Course</h1>
+                                    <p className="mt-5 mb-6 text-gray-300">
+                                        Technology course that introduces students to coding, digital tools, and creative tech projects and coding.
+                                        Perfect for young minds eager to explore the digital world.
+                                    </p>
+                                    <hr />
+                                    <div className="flex flex-wrap gap-y-4 gap-x-12 pt-4">
+                                        <div>
+                                            <div className="flex space-x-2">
+                                                <p className="text-lg font-semibold">Duration</p>
+                                                <IconTimeDuration30 />
+                                            </div>
+                                            <p className="text-md">30 days (continue learning anytime)</p>
+                                        </div>
+                                        <div>
+                                            <div className="flex space-x-2">
+                                                <p className="text-lg font-semibold">Ages</p>
+                                                <IconTimeline />
+                                            </div>
+                                            <p className="text-md">8 – 16 years old</p>
+                                        </div>
+                                        <div>
+                                            <div className="flex space-x-2">
+                                            <p className="text-lg font-semibold">Price</p>
+                                                <IconCashBanknote />
+                                            </div>
+                                            <p className="text-md">2000/month</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

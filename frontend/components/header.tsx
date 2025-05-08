@@ -1,3 +1,5 @@
+import { IconBrain } from "@tabler/icons-react"
+
 export default function Header() {
     const sections = [
         "Home", "FAQ", "Contacts", "Info", "Courses", "Dashboard",
@@ -6,7 +8,10 @@ export default function Header() {
     return (
         <header className="w-full backdrop-blur-md shadow-2xs">
             <div className="py-8 px-10 flex items-center">
-                <p className="font-[500]">Brain Center</p>
+                <div className="flex space-x-2">
+                    <IconBrain />
+                    <p className="font-[500]">Brain Center</p>
+                </div>
                 <nav className="flex-1 flex items-center justify-center space-x-32">
                     {sections.map((section, index) => (
                         <ol key={index}>
